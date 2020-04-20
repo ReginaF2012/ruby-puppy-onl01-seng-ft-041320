@@ -1,6 +1,3 @@
- def save
-     @@all << self
-   end
 
 class Dog 
   attr_reader :name, :all
@@ -12,6 +9,9 @@ class Dog
     self.save
   end
   
+    def save
+    @@all << self
+  end
   
   def self.all
     @all = @@all
