@@ -1,4 +1,4 @@
- def self.save
+ def save
      @@all << self
    end
 
