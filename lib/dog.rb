@@ -10,7 +10,7 @@ class Dog
     @all = @@all
   end 
   
-  def print_all
+  def self.print_all
    @@all.each do |dog, name|
      p name
    end
