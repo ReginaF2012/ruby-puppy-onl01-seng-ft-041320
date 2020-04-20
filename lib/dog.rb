@@ -1,10 +1,11 @@
+ def self.save
+     @@all << self
+   end
+
 class Dog 
   attr_reader :name, :all
   @@all = []
   
-   def self.save
-     @@all << self
-   end
    
   def initialize(name)
     @name = name
